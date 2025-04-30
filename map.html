@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-nav-foot.css">
+    <link rel="stylesheet" href="styles-map.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <title>Indigenous Populations Explorer - Map</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">Indigenous Explorer</div>
+        <div class="nav-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="locations.html">Locations</a></li>
+                <li><a href="map.html">Interactive Map</a></li>
+            </ul>
+        </div>
+        <div class="nav-image">
+            <img src="https://images.vexels.com/media/users/3/313188/isolated/preview/fe65919e6b2b904397b91041b545af2c-concept-design-for-genetic-research-studies.png"/>
+        </div>
+    </nav>
+
+    <section id="map">
+        <h1>Indigenous Map</h1>
+        <p>Explore an Interactive Map showing Indigenous Populations!</p>
+        <div id="map-container"></div>
+        <div id="legend">
+            <button id="legend-toggle">-</button>
+            <div id="legend-content">
+                <h2>Legend</h2>
+                <div>
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon.png" style="width:25px; vertical-align:middle;">
+                    <span>Indigenous listed in Locations</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+    
+
+    <footer id="footer">
+        <div class="footer-links">
+            <h3>Resources and Sources</h3>
+            <div class="footer-images">
+                <a href="https://www.survivalinternational.org/tribes/sentinelese">
+                    <img src="https://www.survivalinternational.org/assets/numiko/logos/survival-logo-nav-ce6fe19e.svg">
+                </a>
+                <a href="https://survivalinternational.org/tribes/yanomami">
+                    <img src="https://www.survivalinternational.org/assets/numiko/logos/survival-logo-nav-ce6fe19e.svg">
+                </a>
+                <a href="https://www.britannica.com/topic/Sami">
+                    <img src="https://cdn.britannica.com/mendel/eb-logo/MendelNewThistleLogo.png">
+                </a>
+                <a href="https://education.nationalgeographic.org/resource/hadza/">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/free-national-geographic-logo-icon-download-in-svg-png-gif-file-formats--major-websites-set-pack-logos-icons-461820.png?f=webp&w=256">
+                </a>
+                <a href="https://evolution.berkeley.edu/high-altitude-adaptations/the-mysteries-of-tibet/">
+                    <img src="https://evolution.berkeley.edu/wp-content/uploads/2020/06/logo-ue.png">
+                </a>
+                <a href="https://docs.google.com/document/d/1Jocxi1M82s9dxE8tJc7FqBVq30q5E6MAzB7B8Ax_3XE/edit?usp=sharing">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a1/Seal_of_University_of_California%2C_Berkeley.svg">
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="scriptmap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/osmtogeojson/3.0.0/osmtogeojson.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+#map-container {
+    height: 500px;
+    width: 100%; 
+    margin: 20px auto;
+    border: 2px solid #ccc;
+}
+
+#legend {
+    position: absolute;
+    top: 229px;
+    left: 33px;
+    background: white;
+    padding: 10px;
+    border-radius: 15%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    font-size: 14px;
+    z-index: 1000;
+    width: 275px;
+}
+
+#legend.minimized {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#legend #legend-toggle {
+    border: none;
+    background: #ccc;
+    color: #000;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+
+#legend.minimized #legend-content {
+    display: none;
+}
+
+#legend h3 {
+    text-align: center;
+}

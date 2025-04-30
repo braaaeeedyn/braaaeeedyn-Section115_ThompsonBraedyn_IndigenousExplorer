@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f6f6ed;
+    color: #333;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    padding: 32px;
+    text-align: center;
+    flex: 1;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #D4CAA3;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #000435;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+#panda-summary, .styled-fact, #panda-fact-display{
+    background-color: #f4f4f9;
+    border: 2px solid #D4CAA3;
+    border-radius: 8px;
+    max-width: 600px;
+    padding: 16px;
+    margin: 16px auto;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+#panda-summary:hover, .styled-fact:hover{
+    background-color: #e8e8f5;
+    color: #222;
+    transform: scale(1.02);
+}
+
+#panda-image-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+button {
+    position: relative;
+    background-color: #000435;
+    color: #D4CAA3;
+    border: 4px solid;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    transition: ease-in-out 0.5s;
+}
+
+button:hover {
+    font-size: 20px;
+    color: #333;
+    background-color: #A9B6D3;
+}
+
+button .description {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    background-color: #A9B6D3;
+    color: #333;
+    padding: 8px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: transform 0.5s ease, opacity 0.5s ease 0.4s;
+    font-size: 12px;
+}
+button:hover .description {
+    opacity: 1;
+    transform: translateY(0);
+}
